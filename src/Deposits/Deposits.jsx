@@ -14,16 +14,16 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Deposits() {
+function Deposits(props) {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Recent Deposits</Title>
+      <Title>{props.title}</Title>
       <Typography component="p" variant="h4">
-        $3,024.00
+        {props.amount}
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
+        {props.date}
       </Typography>
       <div>
         <Link color="primary" href="/depositos" onClick={preventDefault}>
@@ -33,3 +33,5 @@ export default function Deposits() {
     </React.Fragment>
   );
 }
+
+export default Deposits;

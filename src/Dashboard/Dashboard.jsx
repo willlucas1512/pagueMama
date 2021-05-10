@@ -199,17 +199,29 @@ function Dashboard(props) {
             Recent Deposits  */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Deposits />
+                <Deposits
+                  date={"15 de março de 2020"}
+                  amount={"R$3.840,00"}
+                  title={"Total"}
+                />
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Deposits />
+                <Deposits
+                  date={"15 de março de 2020"}
+                  amount={"R$3.840,00"}
+                  title={"Créditos"}
+                />
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Deposits />
+                <Deposits
+                  date={"15 de março de 2020"}
+                  amount={"R$3.840,00"}
+                  title={"Débitos"}
+                />
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
